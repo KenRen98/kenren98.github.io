@@ -6,14 +6,14 @@
 
     <!-- Title -->
     
-    <title>DataCenter Maintenance - Dexuan Ren (Ken Ren)</title>
+    <title>DataCenter Design and Maintenance - Dexuan Ren (Ken Ren)</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Description-->
     
-        <meta name="description" content="Computer Science bachelor from York University, Full Stack developer (Spring, MERN, VUE), working with Cloud Technology everyday, Highly skilled Datacenter and Computer Technician, PC Enthusiast and Content Creator">
+        <meta name="description" content="Computer Science bachelor from York University, Full Stack developer (Spring, MERN, VUE), working with Cloud Technology everyday (AWS, Azure, Docker. Alicloud, Proxmox, QEMU), Highly skilled Datacenter and Computer Technician, PC Enthusiast and Content Creator">
     
 
     <!--Author-->
@@ -28,7 +28,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="DataCenter Maintenance"/>
+        <meta property="og:title" content="DataCenter Design and Maintenance"/>
     
 
     <!--Open Graph Site Name-->
@@ -112,7 +112,7 @@
 
     
       <h1 itemprop="name">
-        DataCenter Maintenance
+        DataCenter Design and Maintenance
       </h1>
     
   
@@ -127,8 +127,12 @@
 
 
 <!-- Content -->
-<p>Currently Running 3 DataCenters with more than 20 Server Nodes, 8 of them are currently imported to Pterodactyl. Now each node is Using Proxmox LXC + Docker to provide Wings Backend, and Front End is hosted in our main DataCenter. The other nodes are used to Host other services or has been rented out for other reason, such as WebHosting, Dedicated High Performance Server or MySQL&#x2F;MariaDB or Testing Purpose.</p>
+<p>Currently, we are running 3 DataCenters with more than 20 Server Nodes, 8 of which are currently imported to Pterodactyl. Each node utilizes Proxmox LXC + Docker to provide the Wings Backend, while the Front End is hosted in our main DataCenter. The remaining nodes are used to host various services or have been rented out for purposes such as WebHosting, Dedicated High-Performance Servers, MySQL&#x2F;MariaDB, or Testing.</p>
 <p><img src="/2021/10/20/datacenter-maintenance/3.jpg" alt="GUI"><br><img src="/2021/10/20/datacenter-maintenance/2.jpg" alt="GUI"><br><img src="/2021/10/20/datacenter-maintenance/1.jpg" alt="GUI"></p>
+<h3 id="Network-Isolation-and-Security"><a href="#Network-Isolation-and-Security" class="headerlink" title="Network Isolation and Security"></a>Network Isolation and Security</h3><p>VLAN is implemented to isolate VM data and Host data, ensuring a secure environment. VMs are properly configured with network policies, limiting data exchange between VM networks. We utilize pfsense as an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS). With the help of snort, we actively prevent DoS and DDoS attacks, as well as other potential threats and data leaks.</p>
+<h3 id="Backup-and-Recovery"><a href="#Backup-and-Recovery" class="headerlink" title="Backup and Recovery"></a>Backup and Recovery</h3><p>A comprehensive backup plan and policies are in place to ensure that snapshots are generated periodically. This approach guarantees data recovery and disaster recovery capabilities, providing peace of mind and minimizing potential downtime.</p>
+<h3 id="High-Availability-and-Storage"><a href="#High-Availability-and-Storage" class="headerlink" title="High Availability and Storage"></a>High Availability and Storage</h3><p>Ceph is employed for High Availability (HA) reasons, ensuring that services remain accessible even in the event of hardware failure. Additionally, NAS is utilized as expandable storage and central backup storage, offering flexibility and robust data protection.</p>
+<p>By integrating these technologies and practices, we maintain a resilient and efficient DataCenter infrastructure, capable of meeting diverse needs and maintaining the highest standards of performance and security.</p>
 
 
 <!-- Tags -->
@@ -136,7 +140,7 @@
 
 
 <div class="tags">
-    <a href="/tags/server/" class="button small">server</a> <a href="/tags/proxmox/" class="button small">proxmox</a> <a href="/tags/datacenter/" class="button small">datacenter</a> <a href="/tags/vm/" class="button small">VM</a>
+    <a href="/tags/server/" class="button small">server</a> <a href="/tags/proxmox/" class="button small">proxmox</a> <a href="/tags/datacenter/" class="button small">datacenter</a> <a href="/tags/vm/" class="button small">VM</a> <a href="/tags/docker/" class="button small">Docker</a> <a href="/tags/networking/" class="button small">Networking</a> <a href="/tags/vlan/" class="button small">VLAN</a> <a href="/tags/sdwan/" class="button small">SDWAN</a> <a href="/tags/ha/" class="button small">HA</a>
 </div>
 
 
