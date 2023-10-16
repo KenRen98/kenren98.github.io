@@ -18,19 +18,22 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # Updated to Node 18
+        node-version: '18'  # Setup Node.js version
 
     - name: Install Hexo
       run: npm install -g hexo-cli
 
     - name: Install Dependencies
-      run: npm install  # Install the Node dependencies specified in package.json
+      run: npm install  # Install dependencies
 
     - name: Hexo Full Generate
-      run: hexo clean && hexo generate  # This will fully regenerate the site
+      run: hexo clean && hexo generate  # Clean and generate the static files
+
+    - name: Copy Resume
+      run: cp resume.pdf ./public/  # Copy the resume.pdf to the public directory
 
     - name: Create CNAME file
-      run: echo "kenren.top" > ./public/CNAME  # Replace with your custom domain
+      run: echo "kenren.top" > ./public/CNAME  # Create a CNAME file for GitHub Pages
 
     - name: Deploy to Main Branch
       uses: peaceiris/actions-gh-pages@v3
