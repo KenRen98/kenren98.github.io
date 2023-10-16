@@ -9,7 +9,7 @@ description: 'Computer Science bachelor from York University, Full Stack develop
 keywords: Spring SpringBoot MERN VUE nodejs expressjs swing jframe server VM docker Jenkins automation alicloud aws azure deployment LXC proxmox networking VPS EC2 UEFI BIOS S3
 author: Ken Ren
 language: en
-timezone: 'America/New_York'
+timezone: 'UTC'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
