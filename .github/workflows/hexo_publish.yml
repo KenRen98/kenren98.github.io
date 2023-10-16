@@ -27,7 +27,7 @@ jobs:
       run: npm install  # Install the Node dependencies specified in package.json
 
     - name: Hexo Generate
-      run: hexo generate  # This will generate the site and place it in the public folder
+      run: hexo clean | hexo generate  # This will generate the site and place it in the public folder
 
     - name: Deploy to Main Branch
       uses: peaceiris/actions-gh-pages@v3
