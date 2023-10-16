@@ -1,0 +1,45 @@
+# Gravatar email
+gravatar_email: 921614853@qq.com
+
+# Default post title
+default_post_title: Untitled
+
+# Default post cover index page (Recommended)
+default_cover_index: "http://placehold.it/450x320"
+
+# Default post cover index page (Optional)
+default_cover_detail: "http://placehold.it/1300x500"
+
+# Show Dates for posts and pages
+show_dates: true
+
+# Style of home page 'blog' or 'thumbs'
+style: thumbs
+
+# About page for call to action on home page
+about_page: page
+
+# favicon
+favicon: images/favicon.ico
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname: kenren-1
+  # Facebook comments
+
+# Google Analytics Tracking ID
+google_analytics: G-LZNS68MH0E
+
+# Social Accounts
+twitter_url:
+facebook_url: https://www.facebook.com/kenrenphoto/
+instagram_url:
+dribble_url:
+github_url: https://github.com/KenRen98
+googleplus_url:
+behance_url:
+fivehundredpx_url:
+email_url: mailto:ken.ren98@gmail.com
+rss_url:
+

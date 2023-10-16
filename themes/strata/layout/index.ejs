@@ -1,0 +1,52 @@
+  <!-- One -->
+  <section id="one">
+    <header class="major">
+      <% if(config.subtitle) { %>
+        <h2><%- config.subtitle %></h2>
+      <%} else {%>
+          <h2>Give your site a subtitle in your Hexo config file.</h2>
+      <%} %>
+    </header>
+    <% if(config.subtitle) { %>
+      <p><%- config.description %></p>
+    <%} else {%>
+      <p>Add a description to your Hexo config file and it will show here. Or if your would rather have blog layout here you could set style in the theme config file to 'blog'. The button below will go to the page set by about_page in theme config .</p>
+    <% }%>
+    <style>
+      .actions {
+        margin-bottom: 0; /* Sets the bottom margin of the ul element with class "actions" to 0 */
+      }
+    </style>
+    <ul class="actions">
+      <li><a href="https://www.linkedin.com/in/dexuan-ren-b41a9258/" target="_blank" class="button">Linkedin Profile</a></li>
+      <li><a href="/resume.pdf" target="_blank" class="button">Download Resume</a></li>
+    </ul>
+  </section>
+
+  <% if( theme.style == 'blog') { %>
+    <%- partial('_partial/archive', {pagination: config.archive}) %>
+  <% } else { %>
+
+    <!-- Two -->
+    <section id="two">
+      <style>
+        h2 {
+          margin-bottom: 0; /* Removes the top margin of the h4 element */
+        }
+      </style>
+      <h2>Recent Work</h2>
+      <p>(Click Article Title for Detail)</p>
+      <div class="row">
+        <% page.posts.forEach(function(item, index){ %>
+            <%- partial('_partial/article-index', {item: item, index: index}) %>
+        <% }); %>
+      </div>
+
+  <% } %>
+
+    <%- partial('_partial/pagination') %>
+
+    <ul class="actions">
+      <li><a href="<%- url_for('archives') -%>" class="button">Archives</a></li>
+    </ul>
+  </section>
