@@ -26,6 +26,8 @@ I also participates in the egg (Docker image and Installation scripts) developem
    - **Distributed System:** The nodes are part of a distributed system that ensures high availability and fault tolerance.
    - **Microservices:** The system is built using a microservices architecture, allowing for scalability and ease of maintenance.
 
+![Many Nodes](nodes.png)
+
 ### Containerization with Docker:
    - **Isolation:** Docker containers encapsulate each game server, ensuring isolation and consistent environments.
    - **Docker Compose:** Used for defining and running multi-container Docker applications, simplifying deployment.
@@ -33,6 +35,8 @@ I also participates in the egg (Docker image and Installation scripts) developem
 ### Pterodactyl Panel:
    - **Integration:** The panel is integrated with the Docker ecosystem, providing a unified interface for managing game servers.
    - **Customization:** Allows for extensive customization of server settings and configurations.
+
+![Demo Servers](Demo-Servers.png)
 
 ### Security:
    - **MFA:** Multi-Factor Authentication (MFA) using the Google Authenticator app enhances security.
