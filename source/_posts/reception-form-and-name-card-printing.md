@@ -12,8 +12,8 @@ tags:
   - Cookie
   - JWT
   - REST
-cover_detail: /2023/10/15/reception-from-and-name-card-printing/List.png
-cover_index: /2023/10/15/reception-from-and-name-card-printing/450.png
+cover_detail: /2023/10/15/reception-form-and-name-card-printing/List.png
+cover_index: /2023/10/15/reception-form-and-name-card-printing/450.png
 ---
 
 ![Attendees Page](List.png)
