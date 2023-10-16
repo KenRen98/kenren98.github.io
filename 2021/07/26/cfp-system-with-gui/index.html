@@ -6,7 +6,7 @@
 
     <!-- Title -->
     
-    <title>Game Server Rental and Egg Development - Dexuan Ren (Ken Ren)</title>
+    <title>CFP System with GUI - Dexuan Ren (Ken Ren)</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Game Server Rental and Egg Development"/>
+        <meta property="og:title" content="CFP System with GUI"/>
     
 
     <!--Open Graph Site Name-->
@@ -97,7 +97,7 @@
   <div class="meta">
   
       <span class="date">
-          2022-07-11
+          2021-07-26
       </span>
   
 
@@ -112,14 +112,14 @@
 
     
       <h1 itemprop="name">
-        Game Server Rental and Egg Development
+        CFP System with GUI
       </h1>
     
   
 
 
 
-    <div class="image main"><img src="/2022/07/11/game-server-hosting-and-rental/panel.png" alt="" /></div>
+    <div class="image main"><img src="/2021/07/25/cfp-system-with-gui/main-GUI.png" alt="" /></div>
 
 
 <!-- Gallery -->
@@ -127,41 +127,16 @@
 
 
 <!-- Content -->
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>We have integrated the Pterodactyl panel for these new nodes, a move that streamlines management and operations while enhancing automation capabilities.<br>I also participates in the egg (Docker image and Installation scripts) developement of Pterodactyl in the major open source repositories.</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/KenRen98">My Github Page</a>.</p>
-<h2 id="Technical-Design"><a href="#Technical-Design" class="headerlink" title="Technical Design"></a>Technical Design</h2><h3 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture:"></a>Architecture:</h3><ul>
-<li><strong>Distributed System:</strong> The nodes are part of a distributed system that ensures high availability and fault tolerance.</li>
-<li><strong>Microservices:</strong> The system is built using a microservices architecture, allowing for scalability and ease of maintenance.</li>
+<h1 id="CFP-System-with-GUI"><a href="#CFP-System-with-GUI" class="headerlink" title="CFP System with GUI"></a>CFP System with GUI</h1><p>A Swing program used to manage CFP database.</p>
+<h2 id="Components"><a href="#Components" class="headerlink" title="Components"></a>Components</h2><ul>
+<li><strong>CFP class:</strong> Responsible for information collection and conversion.</li>
+<li><strong>Cache class:</strong> Implemented using Singleton Design to store drafts, prevent mistakes, and avoid illegal inputs.</li>
+<li><strong>MysqlFuntion class:</strong> Provides the DB connection API, which is used by the swing GUI codes.</li>
+<li><strong>GUI_3421A3 class:</strong> Handles the Swing GUI and all button functions.</li>
 </ul>
-<h3 id="Containerization-with-Docker"><a href="#Containerization-with-Docker" class="headerlink" title="Containerization with Docker:"></a>Containerization with Docker:</h3><ul>
-<li><strong>Isolation:</strong> Docker containers encapsulate each game server, ensuring isolation and consistent environments.</li>
-<li><strong>Docker Compose:</strong> Used for defining and running multi-container Docker applications, simplifying deployment.</li>
-</ul>
-<h3 id="Pterodactyl-Panel"><a href="#Pterodactyl-Panel" class="headerlink" title="Pterodactyl Panel:"></a>Pterodactyl Panel:</h3><ul>
-<li><strong>Integration:</strong> The panel is integrated with the Docker ecosystem, providing a unified interface for managing game servers.</li>
-<li><strong>Customization:</strong> Allows for extensive customization of server settings and configurations.</li>
-</ul>
-<h3 id="Security"><a href="#Security" class="headerlink" title="Security:"></a>Security:</h3><ul>
-<li><strong>MFA:</strong> Multi-Factor Authentication (MFA) using the Google Authenticator app enhances security.</li>
-<li><strong>Firewalls &amp; Network Isolation:</strong> Implementation of firewalls and network segmentation to protect sensitive data.</li>
-</ul>
-<h3 id="Automation-Monitoring"><a href="#Automation-Monitoring" class="headerlink" title="Automation &amp; Monitoring:"></a>Automation &amp; Monitoring:</h3><ul>
-<li><strong>CI&#x2F;CD Pipeline:</strong> Continuous Integration and Continuous Deployment (CI&#x2F;CD) pipeline for automated testing and deployment.</li>
-<li><strong>Monitoring Tools:</strong> Integration with monitoring tools like Prometheus and Grafana for real-time insights.</li>
-</ul>
-<h2 id="Deployment-Strategy"><a href="#Deployment-Strategy" class="headerlink" title="Deployment Strategy"></a>Deployment Strategy</h2><h3 id="Environment-Setup"><a href="#Environment-Setup" class="headerlink" title="Environment Setup:"></a>Environment Setup:</h3><ul>
-<li><strong>Development, Staging, and Production Environments:</strong> Ensuring a smooth transition from development to production.</li>
-</ul>
-<h3 id="Scalability"><a href="#Scalability" class="headerlink" title="Scalability:"></a>Scalability:</h3><ul>
-<li><strong>Horizontal Scaling:</strong> Ability to add or remove nodes based on demand, ensuring optimal resource utilization.</li>
-</ul>
-<h3 id="Backup-Recovery"><a href="#Backup-Recovery" class="headerlink" title="Backup &amp; Recovery:"></a>Backup &amp; Recovery:</h3><ul>
-<li><strong>Regular Backups:</strong> Scheduled backups of critical data.</li>
-<li><strong>Disaster Recovery Plan:</strong> A robust plan to ensure data integrity and availability in case of failure.</li>
-</ul>
-<h2 id="Accessing-the-New-Panel"><a href="#Accessing-the-New-Panel" class="headerlink" title="Accessing the New Panel"></a>Accessing the New Panel</h2><p>The new panel can be accessed at <a target="_blank" rel="noopener" href="https://panel.mr-leaves.com/">Mr.Leaves Server Group</a>.</p>
-<p><img src="/2022/07/11/game-server-hosting-and-rental/panel-gui.png" alt="GUI"></p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The technical design and deployment strategy of our game server hosting system reflect our commitment to excellence. By leveraging cutting-edge technologies and best practices, we provide a robust, scalable, and secure solution that meets the needs of demanding users. Explore the new panel and experience the benefits of our advanced hosting solution.</p>
+<h2 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h2><p>All source code for this project is available on <a target="_blank" rel="noopener" href="https://github.com/KenRen98/EECS3421-A3">GitHub</a>.</p>
+<p>Feel free to explore and contribute!</p>
+<p><img src="/2021/07/26/cfp-system-with-gui/1.png" alt="GUI"><br><img src="/2021/07/26/cfp-system-with-gui/2.png" alt="GUI"></p>
 
 
 <!-- Tags -->
@@ -169,7 +144,7 @@
 
 
 <div class="tags">
-    <a href="/tags/docker/" class="button small">Docker</a> <a href="/tags/datacenter/" class="button small">DataCenter</a> <a href="/tags/tech/" class="button small">Tech</a> <a href="/tags/linux/" class="button small">Linux</a> <a href="/tags/automation/" class="button small">Automation</a> <a href="/tags/games/" class="button small">Games</a> <a href="/tags/rest-api/" class="button small">REST API</a> <a href="/tags/docker-compose/" class="button small">Docker Compose</a>
+    <a href="/tags/mysql/" class="button small">MySQL</a> <a href="/tags/mariadb/" class="button small">MariaDB</a> <a href="/tags/database/" class="button small">DataBase</a> <a href="/tags/gui/" class="button small">GUI</a> <a href="/tags/swing/" class="button small">Swing</a> <a href="/tags/java/" class="button small">Java</a>
 </div>
 
 
@@ -245,7 +220,7 @@
             
             
             
-                <li><a href="ken.ren98@gmail.com" class="icon fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                <li><a href="mailto:ken.ren98@gmail.com" class="icon fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
             
             
         </ul>
