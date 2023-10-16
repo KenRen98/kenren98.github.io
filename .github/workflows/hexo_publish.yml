@@ -26,8 +26,11 @@ jobs:
     - name: Install Dependencies
       run: npm install  # Install the Node dependencies specified in package.json
 
-    - name: Hexo Generate
-      run: hexo clean | hexo generate  # This will generate the site and place it in the public folder
+    - name: Hexo Full Generate
+      run: hexo clean && hexo generate  # This will fully regenerate the site
+
+    - name: Create CNAME file
+      run: echo "kenren.top" > ./public/CNAME  # Replace with your custom domain
 
     - name: Deploy to Main Branch
       uses: peaceiris/actions-gh-pages@v3
