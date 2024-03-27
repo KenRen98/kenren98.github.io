@@ -21,6 +21,8 @@ cover_index: /2023/07/15/event-posting-and-management-platform/450.png
 
 The Event Posting and Management Platform is an innovative startup project designed to revolutionize the way individuals and organizations plan and manage events. From selecting venues to hiring temporary staff, selling tickets, and coordinating with suppliers, this platform offers a comprehensive solution for all event-related needs.
 
+**Website: https://evtgo.com/**
+
 Note: UI/UX is done by contractors, but prototyping and coding are done by me.
 
 ![GUI](Prototyping.jpg)
@@ -43,9 +45,11 @@ Note: UI/UX is done by contractors, but prototyping and coding are done by me.
 - **ExpressJS and REST API:** Powering the server-side logic and providing a robust API for client interaction.
 - **Mongoose and MongoDB:** Serving as the primary database for storing event details, user information, and more.
 - **Redis:** Utilized as a caching solution for frequently requested content, enhancing performance.
+- **InfluxDB:** Used as data logging micro service, trade off little accuracy to eliminate blocking and complex batching 
 
 ### User Management
-- **Cognito:** Managing user authentication, authorization, and profile handling.
+- **Cognito:** Managing user authentication, authorization, and profile handling. (Removed in later version)
+- **Decoupled DB:** For User Store and other regional data for best performance while maintain user data consistency
 
 ### Hosting and Deployment
 - **EC2:** Hosting the application on Amazon's Elastic Compute Cloud (EC2) for scalable and reliable performance.
