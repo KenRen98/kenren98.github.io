@@ -26,8 +26,11 @@ The Event Posting and Management Platform is an innovative startup project desig
 Note: UI/UX is done by contractors, but prototyping and coding are done by me.
 
 ![GUI](Prototyping.jpg)
+(Above Prototype is designed by me)  
+
 ![GUI](UI-1.png)
 ![GUI](UI-2.png)
+(Detailed designed by third party)  
 
 ## Features
 
