@@ -128,8 +128,10 @@
 
 <!-- Content -->
 <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The Event Posting and Management Platform is an innovative startup project designed to revolutionize the way individuals and organizations plan and manage events. From selecting venues to hiring temporary staff, selling tickets, and coordinating with suppliers, this platform offers a comprehensive solution for all event-related needs.</p>
+<p><strong>Website: <a target="_blank" rel="noopener" href="https://evtgo.com/">https://evtgo.com/</a></strong></p>
 <p>Note: UI&#x2F;UX is done by contractors, but prototyping and coding are done by me.</p>
-<p><img src="/2023/07/15/event-posting-and-management-platform/Prototyping.jpg" alt="GUI"><br><img src="/2023/07/15/event-posting-and-management-platform/UI-1.png" alt="GUI"><br><img src="/2023/07/15/event-posting-and-management-platform/UI-2.png" alt="GUI"></p>
+<p><img src="/2023/07/15/event-posting-and-management-platform/Prototyping.jpg" alt="GUI"><br>(Above Prototype is designed by me)  </p>
+<p><img src="/2023/07/15/event-posting-and-management-platform/UI-1.png" alt="GUI"><br><img src="/2023/07/15/event-posting-and-management-platform/UI-2.png" alt="GUI"><br>(Detailed designed by third party)  </p>
 <h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><h3 id="Event-Planning-Tools"><a href="#Event-Planning-Tools" class="headerlink" title="Event Planning Tools"></a>Event Planning Tools</h3><ul>
 <li><strong>Venue Selection:</strong> Browse and rent the perfect place for your event.</li>
 <li><strong>Supplier Coordination:</strong> Find and collaborate with suppliers for catering, decorations, and more.</li>
@@ -142,9 +144,11 @@
 <li><strong>ExpressJS and REST API:</strong> Powering the server-side logic and providing a robust API for client interaction.</li>
 <li><strong>Mongoose and MongoDB:</strong> Serving as the primary database for storing event details, user information, and more.</li>
 <li><strong>Redis:</strong> Utilized as a caching solution for frequently requested content, enhancing performance.</li>
+<li><strong>InfluxDB:</strong> Used as data logging micro service, trade off little accuracy to eliminate blocking and complex batching</li>
 </ul>
 <h3 id="User-Management"><a href="#User-Management" class="headerlink" title="User Management"></a>User Management</h3><ul>
-<li><strong>Cognito:</strong> Managing user authentication, authorization, and profile handling.</li>
+<li><strong>Cognito:</strong> Managing user authentication, authorization, and profile handling. (Removed in later version)</li>
+<li><strong>Decoupled DB:</strong> For User Store and other regional data for best performance while maintain user data consistency</li>
 </ul>
 <h3 id="Hosting-and-Deployment"><a href="#Hosting-and-Deployment" class="headerlink" title="Hosting and Deployment"></a>Hosting and Deployment</h3><ul>
 <li><strong>EC2:</strong> Hosting the application on Amazon’s Elastic Compute Cloud (EC2) for scalable and reliable performance.</li>
