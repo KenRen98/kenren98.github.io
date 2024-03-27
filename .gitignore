@@ -1,3 +1,7 @@
+# HEXO public directory and db.json
+public
+db.json
+
 # Logs
 logs
 *.log
