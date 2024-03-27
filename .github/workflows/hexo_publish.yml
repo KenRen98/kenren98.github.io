@@ -27,7 +27,7 @@ jobs:
       run: npm install  # Install dependencies
     
     - name: Set Timezone to UTC in _config.yml
-      run: sed -i "s|timezone:.*|timezone: 'UTC'|" _config.yml
+      run: sed -i "s|timezone:.*|timezone: \'UTC\'| " _config.yml
     # This command uses pipes as delimiters to avoid conflict with the slash in the file path.
     # It ensures the timezone setting is changed to 'UTC', maintaining the single quotes for consistency with your config format.
 
