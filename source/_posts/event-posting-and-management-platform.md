@@ -30,7 +30,7 @@ Note: UI/UX is done by contractors, but prototyping and coding are done by me.
 
 ![GUI](UI-1.png)
 ![GUI](UI-2.png)
-(Detailed designed by third party)  
+(Detailed design by third party)  
 
 ## Features
 
