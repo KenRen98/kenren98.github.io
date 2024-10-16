@@ -21,7 +21,7 @@ cover_index: /2023/07/15/event-posting-and-management-platform/450.png
 
 The Event Posting and Management Platform is an innovative startup project designed to revolutionize the way individuals and organizations plan and manage events. From selecting venues to hiring temporary staff, selling tickets, and coordinating with suppliers, this platform offers a comprehensive solution for all event-related needs.
 
-**Website: https://evtgo.com/**
+**Website: https://old.evtgo.com/**
 
 Note: UI/UX is done by contractors, but prototyping and coding are done by me.
 
